@@ -1,0 +1,11 @@
+div#loginbox{
+    width: 100%;
+    font-weight: bold;
+    background: var(--color-babyblue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
