@@ -1,11 +1,33 @@
+div#wrap-loginbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
 div#loginbox{
-    width: 100%;
+    
+    width: 25%;
     font-weight: bold;
-    background: var(--color-babyblue);
+    background: var(--color-white);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+
+}
+
+div#register{
+    height: 60px;
+    width: 100%;
+    background: var(--color-navyblue);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 8px 8px 0 0;
 
 }

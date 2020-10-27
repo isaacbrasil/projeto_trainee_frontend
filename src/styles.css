@@ -1,9 +1,11 @@
 :root {
-    --color-background: #EEEEEE;
+    --color-background: #E5E5E5;
     --color-babyblue: #28abb9;
     --color-navyblue: #2d6187;
     --color-sandgreen: #a8dda8;
     --color-greenishwhite: #effad3;
+    --color-white: #ffffff;
+
 }
 *{
     margin: 0;
@@ -15,7 +17,6 @@
 
 body {
     font-family: Poppins;
-    background: var(--color-background);
 }
 .App{
     display: flex;
@@ -25,4 +26,6 @@ body {
 
 .content-wrap{
     flex: 1;
+    background: var(--color-background);
+
 }
