@@ -11,7 +11,7 @@ const Login = (props) => {
 
             <div id="loginbox" >
                 <div id="register" >
-                    Autenticação
+                    Cadastre-se
                     </div >
                 <Form>
                     <FormGroup>

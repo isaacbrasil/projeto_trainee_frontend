@@ -1,13 +1,12 @@
 div#wrap-loginbox{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 25vh;
+    flex-direction: column;
 }
 
 div#loginbox{
-    
-    width: 25%;
+    width: 20%;
     font-weight: bold;
     background: var(--color-white);
     color: black;
@@ -16,7 +15,8 @@ div#loginbox{
     align-items: center;
     flex-direction: column;
     border-radius: 8px;
-
+    padding-bottom: 24px;
+    font-size: 25px;
 }
 
 div#register{
@@ -27,7 +27,15 @@ div#register{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     border-radius: 8px 8px 0 0;
+
+}
+div#cadastrar-button-box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+div#cadastrar-button{
+    justify-content: flex-end;
 
 }
