@@ -2,7 +2,7 @@ import React from 'react';
 
 function Perfil(){
     return(
-        <h1>Página Perfil</h1>
+        <h1>Página de Perfil</h1>
     );
 };
 

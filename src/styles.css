@@ -1,3 +1,20 @@
+/* max-width */
+
+@media screen and (max-width: 1490px) {
+    div#loginbox{
+        width: 30%;
+    }
+
+}
+
+/* min-width */
+
+@media screen and (min-width: 900px) {}
+
+/* min-width & max-width */
+
+@media screen and (min-width: 900px) and (max-width: 600px) {}
+
 :root {
     --color-background: #E5E5E5;
     --color-gray: #EAE9E9;
@@ -6,28 +23,27 @@
     --color-sandgreen: #a8dda8;
     --color-greenishwhite: #effad3;
     --color-white: #ffffff;
-
 }
-*{
+
+* {
     margin: 0;
     outline: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
     font-family: Poppins;
     font-size: 16px;
 }
-.App{
+
+.App {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.content-wrap{
+.content-wrap {
     flex: 1;
     background: var(--color-background);
-
 }

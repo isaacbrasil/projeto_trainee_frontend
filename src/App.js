@@ -5,6 +5,8 @@ import {
   CardTitle, CardSubtitle
 } from 'reactstrap';
 
+
+
 //import { FacebookLoginButton } from "react-social-login-buttons";
 
 import "./styles.css";
@@ -25,11 +27,8 @@ function App() {
     <div className="App">
 
       <div className="content-wrap">
-      <Routes />
-
         <Header />
-        <Login />
-
+        <Routes />
       </div>
 
       <Footer />

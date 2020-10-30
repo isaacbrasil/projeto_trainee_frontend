@@ -8,7 +8,6 @@ import "./styles.css";
 const Login = (props) => {
     return (
         <div id="wrap-loginbox" >
-
             <div id="loginbox" >
                 <div id="register" >
                     Autenticação
@@ -24,7 +23,7 @@ const Login = (props) => {
                     </FormGroup>
                 </Form>
                 <div id="btn-login" >
-                    <Button color="info">login</Button>{' '}
+                    <Button color="info" href="/cadastro">login</Button>{''}
                 </div>
             </div >
 
