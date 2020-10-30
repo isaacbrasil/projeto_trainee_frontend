@@ -25,9 +25,9 @@ function App() {
   return (
 
     <div className="App">
-
+      <Header />
       <div className="content-wrap">
-        <Header />
+
         <Routes />
       </div>
 

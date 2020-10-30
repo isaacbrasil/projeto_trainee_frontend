@@ -1,8 +1,47 @@
+@media screen and (max-width: 1490px) {
+    div#registerbox {
+        width: 80%;
+    }
+    footer#main-footer {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    div#registerbox {
+        width: 80%;
+    }
+    footer#main-footer {
+        font-size: 15px;
+    }
+}
+@media (max-width: 767.98px) {
+    div#registerbox {
+        width: 90%;
+    }
+    footer#main-footer {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    div#registerbox {
+        width: 90%;
+    }
+    footer#main-footer {
+        font-size: 2px;
+    }
+}
+
+
+
+
+
 div#wrap-registerbox {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-top: 25vh;
-    flex-direction: column;
 }
 
 div#registerbox {

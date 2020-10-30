@@ -28,6 +28,7 @@ const Login = (props) => {
             </div >
 
             <div id="cadastrar-button-box">
+                
                 <div id="cadastrar-button">
                     <a href="">Criar Login</a>
                 </div>
