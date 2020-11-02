@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-    Button, Form, FormGroup, Label, Input, FormText, Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle
-} from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import "./styles.css";
 
 

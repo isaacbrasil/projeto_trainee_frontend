@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
-import {
-  Button, Form, FormGroup, Label, Input, FormText, Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle
-} from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 
 
@@ -27,7 +24,6 @@ function App() {
     <div className="App">
       <Header />
       <div className="content-wrap">
-
         <Routes />
       </div>
 

@@ -1,0 +1,49 @@
+div #answers {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+div #answers button{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 200px;
+    background: var(--color-sandgreen);
+    border: none;
+    border-radius: 8px;
+}
+div #answer1 , #answer2 , #answer3 , #answer4{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-navyblue);
+}
+div #answers button:hover{
+    background: var(--color-sandgreen-dark);
+}
+div#items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div#question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4px;
+    color: var(--color-navyblue);
+
+}
+
+div#loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
