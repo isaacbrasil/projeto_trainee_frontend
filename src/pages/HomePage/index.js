@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import {
-    Button, Form, FormGroup, Label, Input, FormText, Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle
-} from 'reactstrap';
+    Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import "./styles.css";
 
 const Login = (props) => {

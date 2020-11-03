@@ -1,58 +1,85 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
+import api from '../../services/api';
+import axios from 'axios';
 
-import api from "../../services/api";
-import "./styles.css";
-const API_URL = 'https://opentdb.com/api.php?amount=10&category=14&difficulty=easy&type=multiple';
-
+import './styles.css';
 
 function RenderApi() {
 
-    const [questions, setQuestions] = useState([]);
-
+    const [conselho, setConselho] = useState("");
 
     useEffect(() => {
-
-        fetch(API_URL)
-            .then((res) => res.json())
-            .then((data) => {
-                setQuestions(data.results);
-            });
-
-    }, []);
+        api.get('advice').then(response => {
+            setConselho(response.data.slip);
+        });
+    }, [conselho]);
 
 
-    return questions.length > 0 ? (
+    // state = {
+    //     advice: '',
+    // }
 
-        <div id="trivia-wrap">
+    // componentDidMount() {
+    //     this.fetchAdvice();
+    // }
 
-            <div id="question">
-                <h2 dangerouslySetInnerHTML={{ __html: questions[0].question }}></h2>
+    // fetchAdvice = () => {
+    //     axios.get('https://api.adviceslip.com/advice')
+    //         .then((response) => {
+    //             const { advice } = response.data.slip;
+
+    //             this.setState({ advice });
+    //             // console.log(advice);
+    //         })
+    //         .catch((error) => {
+    //             console.log(error);
+    //         });
+    // }
+
+    // function handleAparecer() {
+    //     setAdvice(<h2 id="advice-text">{this.state.advice}</h2>);       
+    // }
+
+
+
+    return (
+        <>
+            {/* 
+            <div id="advicebox">
+                <h1>Conselho do Dia:</h1>
+                <h2 id="advice-text">{this.state.advice}</h2>
+                <button id="adv-button" onClick={this.state.advice}>
+                    <span>
+                        Me de conselho
+                        </span>
+                </button>
+            </div> */}
+
+            <div id="advicebox">
+                <h1>Conselhos para a vida:</h1>
+                    <h2>"{conselho.advice}"</h2>
             </div>
 
-            <div id="answers">
-                <button id="answer1">
-                    {questions[0].correct_answer}
-                </button>
-                <button id="answer2">
-                    {questions[0].incorrect_answers[0]}
 
-                </button>
-                <button id="answer3">
-                    {questions[0].incorrect_answers[1]}
 
-                </button>
-                <button id="answer4">
-                    {questions[0].incorrect_answers[2]}
+        </>
 
-                </button>
-            </div>
-        </div>
+    );
 
-    ) : (
-            <div id="loading">
-                <h1>Carregando Perguntas...</h1>
-            </div>
-        );
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
+
 export default RenderApi;
