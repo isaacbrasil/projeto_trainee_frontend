@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import "./styles.css";
 
+import CameraIcon from '../../images/camera.svg';
 
 function Cadastro() {
     return (
@@ -12,34 +13,27 @@ function Cadastro() {
                     Cadastre-se
                 </div >
 
-                <div id="imgfile">
+                <div className="image-upload">
 
-                    <div class="image-upload">
+                    <label for="file-input">
+                        <div id="img-cam">
+                            <img src={CameraIcon} />
+                        </div>
+                    </label>
 
-                        <label for="file-input">
-                            <img src="https://icon-library.net/images/upload-photo-icon/upload-photo-icon-21.jpg" />
-                        </label>
+                    <input id="file-input" type="file" />
 
-                        <input id="file-input" type="file" />
-                    </div>
-                    
                 </div>
 
                 <Form>
-
-
                     <FormGroup>
                         <Label for="exampleEmail">Insira um Email</Label>
-                        <Input type="email" name="email" id="exampleEmail" placeholder="email@email.com" />
+                        <Input type="email" name="email" id="exampleEmail1" placeholder="email@email.com" />
                     </FormGroup>
                     <FormGroup>
                         <Label for="examplePassword">Insira uma Senha</Label>
-                        <Input type="password" name="password" id="examplePassword" placeholder="password" />
+                        <Input type="password" name="password" id="examplePassword1" placeholder="password" />
                     </FormGroup>
-
-
-
-
                 </Form>
                 <div id="btn-save" >
                     <Button color="info">Salvar</Button>{' '}

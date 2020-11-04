@@ -5,7 +5,11 @@ import "./styles.css";
 
 const Header = () => (
 
-    <header id="main-header">Nome da Page aqui</header>
+    <header id="main-header">
+        <h1>Reac</h1>
+        <h2>tips</h2>
+    
+    </header>
 
 );
 

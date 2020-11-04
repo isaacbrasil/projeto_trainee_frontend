@@ -10,3 +10,6 @@ header#main-header {
     align-items: center;
     
 }
+h2{
+    color: var(--color-babyblue);
+}

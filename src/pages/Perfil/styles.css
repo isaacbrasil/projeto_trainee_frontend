@@ -1,5 +1,5 @@
 @media screen and (max-width: 1490px) {
-    div#registerbox {
+    div#profilebox {
         width: 80%;
     }
     footer#main-footer {
@@ -8,15 +8,16 @@
 }
 
 @media screen and (max-width: 991.98px) {
-    div#registerbox {
+    div#profilebox {
         width: 80%;
     }
     footer#main-footer {
         font-size: 15px;
     }
 }
+
 @media (max-width: 767.98px) {
-    div#registerbox {
+    div#profilebox {
         width: 90%;
     }
     footer#main-footer {
@@ -25,7 +26,7 @@
 }
 
 @media (max-width: 425px) {
-    div#registerbox {
+    div#profilebox {
         width: 90%;
     }
     footer#main-footer {
@@ -33,23 +34,19 @@
     }
 }
 
-
-
-
-
-div#wrap-registerbox {
+div#wrap-profilebox {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-div#registerbox {
+div#profilebox {
     width: 50vh;
     font-weight: bold;
     background: var(--color-white);
     color: black;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -57,10 +54,9 @@ div#registerbox {
     padding-bottom: 24px;
     font-size: 25px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-
 }
 
-div#register {
+div#profile {
     height: 60px;
     width: 100%;
     background: var(--color-navyblue);
@@ -84,7 +80,6 @@ div#cadastrar-button {
 .image-upload>input {
     display: none;
     cursor: pointer;
-
 }
 
 .image-upload {
@@ -96,15 +91,52 @@ div#cadastrar-button {
     justify-content: center;
 }
 
-.image-upload img{
+.image-upload img {
     height: 60px;
     margin: 15px 15px;
     cursor: pointer;
-
 }
-input#exampleEmail1, #examplePassword1 {
+
+input#exampleEmail, #examplePassword {
     display: inline;
     background: var(--color-gray);
-    cursor: default;
-   
+    cursor: not-allowed;
+}
+
+div#all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div#left img {
+    height: 500px;
+    width: 700px;
+}
+
+span img {
+    background: var(--color-gray);
+    height: 30px;
+    width: 30px;
+}
+
+.input1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-locker {
+    background-color: var(--color-gray);
+    margin: auto;
+    width: 42px;
+    height: 42px;
+    padding: 8px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+input#exampleEmail1 {
+    cursor: not-allowed;
+}
+input#examplePassword1 {
+    cursor: not-allowed;
 }
