@@ -102,7 +102,7 @@ div#cadastrar-button {
     cursor: pointer;
 
 }
-input#exampleEmail1, #examplePassword1 {
+input#exampleName1, #exampleEmail1, #examplePassword1 {
     display: inline;
     background: var(--color-gray);
     cursor: default;

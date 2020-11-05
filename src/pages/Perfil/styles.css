@@ -134,9 +134,14 @@ span img {
     border-radius: 0px 5px 5px 0px;
 }
 
-input#exampleEmail1 {
+input#exampleName2 {
     cursor: not-allowed;
 }
-input#examplePassword1 {
+
+input#exampleEmail2 {
+    cursor: not-allowed;
+}
+
+input#examplePassword2 {
     cursor: not-allowed;
 }
