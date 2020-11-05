@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import "./styles.css";
+
+import axios from 'axios';
 
 import CameraIcon from '../../images/camera.svg';
 import Locker from '../../images/padlock.svg';
@@ -10,6 +13,26 @@ import BgImage from '../../images/undraw_Group_chat_re_frmo.svg';
 
 
 function Profile() {
+
+    
+
+
+
+
+    // const [email, setEmail] = useState("");
+
+    // useEffect(() => {
+    //     axios.post('http://localhost:27017').then(response => { //utilizar axios
+    //         setEmail(response.email);
+    //     });
+    // }, []);
+
+
+
+
+
+
+
     return (
         <>
             <div id="all">
@@ -27,9 +50,9 @@ function Profile() {
 
                             <div className="image-upload">
 
-                                <label for="file-input">
+                                <label  htmlFor="file-input">
                                     <div id="img-cam">
-                                        <img src={CameraIcon} />
+                                        <img src={CameraIcon} alt="input file"/>
                                     </div>
                                 </label>
 
@@ -38,16 +61,14 @@ function Profile() {
                             </div>
                             <Form>
                                 <FormGroup>
-                                    <Label for="exampleEmail">Email</Label>
+                                    <Label for="exampleName">Nome</Label>
                                     <div className="input1">
-                                        <Input type="email" name="email" id="exampleEmail1" placeholder="email@cadastrado.com" disabled="disabled" />
+                                        <Input type="text" name="name" id="exampleName2" placeholder="NomeUser" disabled="disabled" />
                                         <img className="icon-locker" src={Locker} alt="" />
                                     </div>
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Password</Label>
+                                    <Label  for="exampleEmail">Email</Label>
                                     <div className="input1">
-                                        <Input type="password" name="password" id="examplePassword1" placeholder="••••••••" disabled="disabled" />
+                                        <Input type="email" name="email" id="exampleEmail2" placeholder="email@cadastrado.com" disabled="disabled" />
                                         <img className="icon-locker" src={Locker} alt="" />
                                     </div>
                                 </FormGroup>
